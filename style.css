@@ -6,4 +6,32 @@
 
 body {
     font: 16px 'Roboto', arial, helvetica, sans-serif;
+    height: 120vh;
+}
+
+header {
+    box-sizing: border-box;
+    padding: 1vh 2vh;
+    width: 100vw;
+    height: 65px;
+    line-height: 1em;
+    background-color: #4d4d4d;
+    position: fixed;
+    top: 0;
+}
+
+header h1 {
+    display: inline-block;
+}
+
+#search {
+    display: block;
+    width: 30px;
+    height: 30px;
+    float: right; 
+    padding-top: calc(17px - 1vh);
+}
+
+#search img {
+    width: 100%;
 }
