@@ -6,7 +6,10 @@
 
 body {
     font: 16px 'Roboto', arial, helvetica, sans-serif;
-    height: 120vh;
+}
+
+#content {
+    height: 900px;
 }
 
 header {
@@ -15,9 +18,9 @@ header {
     width: 100vw;
     height: 65px;
     line-height: 1em;
-    background-color: #4d4d4d;
     position: fixed;
     top: 0;
+    border-bottom: 1px solid #d1d1d1;
 }
 
 header h1 {
@@ -33,5 +36,37 @@ header h1 {
 }
 
 #search img {
+    width: 100%;
+}
+
+nav {
+    box-sizing: border-box;
+    position: fixed;
+    bottom: 1.5vh;
+    width: 50%;
+    max-width: 280px;
+    height: 46px;
+    margin: 0 25%;
+    border-radius: 14px;
+    border: 2px solid #d1d1d1;
+}
+
+nav ul {
+    list-style: none;
+    box-sizing: border-box;
+    padding: 6px 0;
+    height: 100%;
+    width: 100%;
+}
+
+nav li {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-color: #fff;
+    margin-left: calc((100% - 90px) / 4);
+}
+
+nav li img {
     width: 100%;
 }
