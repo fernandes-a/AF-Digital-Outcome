@@ -9,7 +9,7 @@ body {
 }
 
 #content {
-    height: 900px;
+    padding-top: 65px;
 }
 
 header {
@@ -21,6 +21,8 @@ header {
     position: fixed;
     top: 0;
     border-bottom: 1px solid #d1d1d1;
+    background-color: #fff;
+    z-index: 5;
 }
 
 header h1 {
@@ -39,16 +41,18 @@ header h1 {
     width: 100%;
 }
 
-nav {
+nav {           /*figured out nav problem; if vw>620px make margin a calc*/
     box-sizing: border-box;
     position: fixed;
     bottom: 1.5vh;
     width: 50%;
-    max-width: 280px;
+    max-width: 260px;
     height: 46px;
     margin: 0 25%;
-    border-radius: 14px;
-    border: 2px solid #d1d1d1;
+    border-radius: 18px;
+    border: 1px solid #d1d1d1;
+    background-color: #fff;
+    z-index: 5;
 }
 
 nav ul {
@@ -69,4 +73,62 @@ nav li {
 
 nav li img {
     width: 100%;
+}
+
+.playlist {
+    background-color: #fff;
+    height: 200px;
+    margin: 25px 20px 25px 20px;
+    border-radius: 18px;
+    border: 1px solid #d1d1d1;
+    position: relative;
+}
+
+.playlist .user {
+    display: inline-block;
+    position: absolute;
+    left: 18px;
+    height: 10%;
+    padding-top: 1%;
+}
+
+.playlist .follow {
+    display: inline-block;
+    position: absolute;
+    right: 18px;
+    height: 10%;
+    padding-top: 2%;
+}
+
+.playlist .snippets {
+    background-color: blueviolet;
+    height: 65%;
+    margin-top: 10%;
+}
+
+.playlist .title {
+    height: 15%;
+    display: inline-block;
+    font-size: 14px;
+    padding-left: 10px;
+    box-sizing: border-box;
+    width: 65%;
+    overflow: hidden;
+}
+
+.playlist .interact {
+    height: 15%;
+    display: inline-block;
+    position: absolute;
+    right: 14px;
+    box-sizing: border-box;
+}
+
+.playlist .interact ul {
+    list-style-type: none;
+}
+
+.playlist .interact li {
+    display: inline-block;
+    padding: 3px 0 3px 10px;
 }
