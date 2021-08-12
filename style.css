@@ -90,6 +90,12 @@ nav li img {
     left: 18px;
     height: 10%;
     padding-top: 1%;
+    font-size: 18px;
+}
+
+.playlist .user a {
+    text-decoration: none;
+    color: black;
 }
 
 .playlist .follow {
@@ -109,7 +115,7 @@ nav li img {
 .playlist .title {
     height: 15%;
     display: inline-block;
-    font-size: 14px;
+    font-size: 18px;
     padding-left: 10px;
     box-sizing: border-box;
     width: 65%;
