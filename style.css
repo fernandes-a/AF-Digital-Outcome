@@ -87,10 +87,11 @@ nav li img {
 .playlist .user {
     display: inline-block;
     position: absolute;
-    left: 18px;
-    height: 10%;
-    padding-top: 1%;
+    left: 16px;
+    height: 16%;
+    padding: 3px 0;
     font-size: 18px;
+    box-sizing: border-box;
 }
 
 .playlist .user a {
@@ -102,32 +103,40 @@ nav li img {
     display: inline-block;
     position: absolute;
     right: 18px;
-    height: 10%;
-    padding-top: 2%;
+    height: 16%;
+    padding: 4px 0;
+    box-sizing: border-box;
 }
 
 .playlist .snippets {
     background-color: blueviolet;
-    height: 65%;
-    margin-top: 10%;
+    height: 66%;
+    position: absolute;
+    top: 16%;
+    width: 100%;
 }
 
 .playlist .title {
-    height: 15%;
+    height: 18%;
     display: inline-block;
     font-size: 18px;
     padding-left: 10px;
     box-sizing: border-box;
     width: 65%;
     overflow: hidden;
+    position: absolute;
+    bottom: 0;
+    padding-top: 2px;
 }
 
 .playlist .interact {
-    height: 15%;
+    height: 18%;
     display: inline-block;
     position: absolute;
     right: 14px;
+    bottom: 0;
     box-sizing: border-box;
+    padding-top: 2px;
 }
 
 .playlist .interact ul {
