@@ -4,27 +4,33 @@
     <title>Title</title>
 
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans&display=swap" rel="stylesheet">    
+    
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta charset="utf-8">
 </head>
     
 <body>
-    <nav>
-        <ul>
-            <li><a href="#">Search</a></li>
-            <li><a href="#">Discover lists</a></li>
-            <li><a href="#">Your lists</a></li>
-            <li><a href="#">Profile</a></li>
-            <li><a href="#">Settings</a></li>
-            <li id="home"><a href="index.html" title="Home">Home</a></li>
+    <nav class="nav">
+        <div id="burger-container"><button id="burger" onclick="showMenu()">click</button></div>
+        <ul class="menu">
+            <li class="menu-item"><a href="index.html">Home</a></li>
+            <li class="menu-item"><a href="#">Search</a></li>
+            <li class="menu-item"><a href="#">Discover lists</a></li>
+            <li class="menu-item"><a href="#">Profile</a></li>
+            <li class="menu-item"><a href="#">Settings</a></li>
         </ul>
     </nav>
 
     <div id="song-info">
         <h1>Song title goes here</h1>
         <h2>Artist name goes here</h2>
+        <div id="img">
+        
+        </div> <!-- /img -->
     </div> <!-- /song-info -->
 
     <div id="interact">
@@ -42,5 +48,8 @@
             <li><a href="#">YouTube</a></li>
         </ul>
     </div> <!-- /links -->
+
+    <script src="script.js"></script>
+
 </body>
 </html>
