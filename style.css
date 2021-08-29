@@ -41,15 +41,16 @@ nav {
     list-style: none;
     background-color: #000;
     padding-left: 10%;
-    clip-path: circle(100px at 10% -10%);
-    -webkit-clip-path: circle(100px at 10% -10%);
+    clip-path: circle(50px at -5% -10%);
+    -webkit-clip-path: circle(50px at -5% -10%);
     transition: all 1.5s ease-out;
+    -webkit-transition: all 1.5s ease-out;
     pointer-events: none;
 }
 
 .nav-links.open {
-    clip-path: circle(140% at 10% -10%);
-    -webkit-clip-path: circle(140% at 10% -10%);
+    clip-path: circle(140% at -5% -10%);
+    -webkit-clip-path: circle(140% at -5% -10%);
     pointer-events: all;
 }
 
