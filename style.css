@@ -40,12 +40,13 @@ nav {
     width: 100%;
     list-style: none;
     background-color: #000;
-    padding-left: 10%;
     clip-path: circle(50px at -5% -10%);
     -webkit-clip-path: circle(50px at -5% -10%);
     transition: all 1.5s ease-out;
     -webkit-transition: all 1.5s ease-out;
     pointer-events: none;
+    box-sizing: border-box;
+    padding: 12.5vh 8vh 0 8vh;
 }
 
 .nav-links.open {
@@ -56,7 +57,13 @@ nav {
 
 .nav-item {
     height: 40px;
+    width: 100%;
     opacity: 0;
+    font-size: 1.6em;
+    height: 15vh;
+    padding-top: calc((15vh - 1.6em)/2);
+    box-sizing: border-box;
+    border-bottom: 1px solid #8C8C8C;
 }
 
 .nav-item:nth-child(1){
@@ -92,6 +99,7 @@ nav {
     text-align: center;
     font-size: 1.25em;
     font-weight: 600;
+    line-height: 1.5em;
 }
 
 #song-info h2 {
@@ -99,11 +107,12 @@ nav {
     color: #8C8C8C;
     font-size: 1em;
     font-weight: 600;
+    line-height: 1.5em;
 }
 
 #img {
     width: 250px;
     height: 250px;
     background-color: #fff;
-    margin: 0 calc((100% - 250px)/2);
+    margin: 10px calc((100% - 250px)/2);
 }
