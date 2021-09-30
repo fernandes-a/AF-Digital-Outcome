@@ -8,7 +8,7 @@ body {
     color: #fff;
     background: linear-gradient(180deg, #1A4062 3%, #07111B 40%, rgba(0,0,0,1) 90%);
     background-repeat: no-repeat;
-    height: 100vh;
+    height: 100%;
 }
 
 
@@ -24,6 +24,7 @@ body {
 nav {
     position: relative;
     height: 10vh;
+    z-index: 5;
 }
 
 .hamburger {
@@ -95,14 +96,14 @@ nav {
     opacity: 1;
 }
 
-#song-info h1 {
+h1 {
     text-align: center;
     font-size: 1.25em;
     font-weight: 600;
     line-height: 1.5em;
 }
 
-#song-info h2 {
+h2 {
     text-align: center;
     color: #8C8C8C;
     font-size: 1em;
@@ -115,4 +116,68 @@ nav {
     height: 250px;
     background-color: #fff;
     margin: 10px calc((100% - 250px)/2);
+}
+
+#interact {
+    margin: 30px calc((100% - 270px)/2);
+    height: 80px;
+    position: relative;
+}
+
+.interaction {
+    height: 60px;
+    width: 60px;
+    border-radius: 30px;
+    border: none;
+    position: absolute;
+    background: none;
+}
+
+#save {
+    left: 0px;
+    top: 10px;
+}
+
+#save img {
+    height: 40px;
+    padding: 10px;
+}
+
+#play {
+    left: calc((100%/2) - 35px);
+    top: 5px;
+    height: 70px;
+    width: 70px;
+    border-radius: 35px;
+}
+
+#play img {
+    height: 70px;
+}
+
+#like {
+    right: 0px;
+    top: 10px;
+}
+
+#like img {
+    height: 40px;
+    padding: 10px;
+}
+
+#links {
+    width: 100%;
+}
+
+.external-link {
+    background-color: #fff;
+    padding: 5px;
+    width: 250px;
+    text-align: center;
+    margin: 10px calc((100% - 250px)/ 2);
+}
+
+.external-link a {
+    text-decoration: none;
+    color: #000;
 }
