@@ -170,14 +170,30 @@ h2 {
 }
 
 .external-link {
-    background-color: #fff;
     padding: 5px;
     width: 250px;
     text-align: center;
     margin: 10px calc((100% - 250px)/ 2);
+    height: 50px;
 }
 
 .external-link a {
     text-decoration: none;
-    color: #000;
+    color: #fff;
+    height: 50px;
+    margin: 0;
+    display: block;
+}
+
+.external-link img {
+    width: 50px;
+    padding: 0 5px;
+}
+
+.external-link span {
+    height: 50px;
+    display: inline-block;
+    position: relative;
+    bottom: 20px;
+    line-height: 50px;
 }
