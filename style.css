@@ -50,8 +50,8 @@ nav {
     background-color: #000;
     clip-path: circle(50px at -5% -10%);
     -webkit-clip-path: circle(50px at -5% -10%);
-    transition: all 1.5s ease-out;
-    -webkit-transition: all 1.5s ease-out;
+    transition: all 2s ease-out;
+    -webkit-transition: all 2s ease-out;
     pointer-events: none;
     box-sizing: border-box;
     padding: 12.5vh 8vh 0 8vh;
@@ -64,7 +64,6 @@ nav {
 }
 
 .nav-item {
-    height: 40px;
     width: 100%;
     opacity: 0;
     font-size: 1.6em;
@@ -76,7 +75,9 @@ nav {
 .nav-item a {
     width: 100%;
     display: block;
-    padding-top: calc((15vh - 1.6em)/2);
+    padding: calc((15vh - 1.6em)/2) 0;
+    color: #fff;
+    text-decoration: none;
 }
 
 .nav-item:nth-child(1){
@@ -97,11 +98,6 @@ nav {
 
 .nav-item:nth-child(5){
     transition: all 0.5s ease 0.8s;
-}
-
-.nav-item a{
-    color: #fff;
-    text-decoration: none;
 }
 
 .nav-item.fade {
@@ -238,6 +234,7 @@ h2 {
     border-radius: 8px;
     outline: none;
     color: #000;
+    font-size: 1em;
 }
 
 #search-text.active {
@@ -258,7 +255,8 @@ h2 {
     height: 34px;
     border: none;
     background: none;
-    color: #315b80;
+    color: #397eb9;
+    font-size: 1em;
 }
 #account-info {
     width: 100%;
