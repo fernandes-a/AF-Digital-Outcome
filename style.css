@@ -35,7 +35,7 @@ nav {
 }
 
 .hamburger {
-    position: absolute;
+    position: fixed;
     cursor: pointer;
     left: 3%;
     top: calc((10vh - 29px)/2);
