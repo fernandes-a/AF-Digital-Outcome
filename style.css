@@ -5,13 +5,12 @@
 
 body {
     font: 16px 'DM Sans', sans-serif;
-    background-color: #07111B;
+    background: linear-gradient(180deg, #1A4062 3%, #07111B 40%, #000 90%);
     color: #fff;
     height: 100%;
 }
 
 #content-index {
-    background: linear-gradient(180deg, #1A4062 3%, #07111B 40%, #000 90%);
     background-repeat: no-repeat;
     height: 100%;
 }
