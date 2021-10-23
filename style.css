@@ -58,8 +58,8 @@ nav {
 }
 
 .nav-links.open {
-    clip-path: circle(140% at -5% -10%);
-    -webkit-clip-path: circle(140% at -5% -10%);
+    clip-path: circle(200% at -5% -10%);
+    -webkit-clip-path: circle(200% at -5% -10%);
     pointer-events: all;
 }
 
@@ -69,9 +69,14 @@ nav {
     opacity: 0;
     font-size: 1.6em;
     height: 15vh;
-    padding-top: calc((15vh - 1.6em)/2);
     box-sizing: border-box;
     border-bottom: 1px solid #8C8C8C;
+}
+
+.nav-item a {
+    width: 100%;
+    display: block;
+    padding-top: calc((15vh - 1.6em)/2);
 }
 
 .nav-item:nth-child(1){
