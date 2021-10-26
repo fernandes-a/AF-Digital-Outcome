@@ -300,6 +300,78 @@ h2 {
     font-size: 16px; 
 }
 
+#settings {
+    position: absolute;
+    top: 0;
+    height: 10vh;
+    width: 100%;
+    z-index: 4;
+}
+
+.cog {
+    position: absolute;
+    height: 10vh;
+    right: 0;
+}
+
+.cog img {
+    height: 30px;
+    padding: calc((10vh - 30px)/2);
+}
+
+.settings-options {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    list-style: none;
+    background-color: #000;
+    padding: 12.5vh 8vh 0 8vh;
+    box-sizing: border-box;
+    clip-path: circle(50px at 105% -10%);
+    -webkit-clip-path: circle(50px at 105% -10%);
+    transition: all 2s ease-out;
+    -webkit-transition: all 2s ease-out;
+    pointer-events: none;
+}
+
+.settings-options.open {
+    clip-path: circle(200% at 105% -10%);
+    -webkit-clip-path: circle(200% at 105% -10%);
+    pointer-events: all;
+}
+
+.option {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    border-bottom: 1px solid #8C8C8C;
+    opacity: 0;
+}
+
+.option:nth-child(1){
+    transition: all 0.5s ease 0.2s;
+}
+
+.option:nth-child(2){
+    transition: all 0.5s ease 0.35s;
+}
+
+.option:nth-child(3){
+    transition: all 0.5s ease 0.5s;
+}
+
+.option:nth-child(4){
+    transition: all 0.5s ease 0.65s;
+}
+
+.option:nth-child(5){
+    transition: all 0.5s ease 0.8s;
+}
+
+.option.fade {
+    opacity: 1;
+}
+
 @media only screen and (min-width: 520px) {
     .playlist {
         margin: 7px calc((100vw - 422px)/4);
@@ -324,7 +396,7 @@ h2 {
 }
 
 @media only screen and (min-height: 780px) {
-    #content-index {
+    body {
         height: 100vh;
     }
 

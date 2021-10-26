@@ -38,3 +38,15 @@ function closeSearch() {
 
 };
 
+function showSettings() {
+    alert('dfdgjdh');
+    let settings = document.querySelector('.settings-options')
+    options = document.querySelectorAll('.options');
+
+    settings.classList.toggle("open");
+    
+    options.forEach(link => {
+        link.classList.toggle("fade");
+    });
+};
+
