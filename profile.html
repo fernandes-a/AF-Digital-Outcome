@@ -33,16 +33,14 @@
     </nav>
 
     <div id="settings">
-        <div class="cog" onclick="showSettings()">
-            <img src="images/cogv2.svg" alt="settings" >
-        </div>
+        <button id="cog" onclick="showSettings()"><img src="images/cogv2.svg" alt="settings"></button>
 
         <ul class="settings-options">
             <li class="option">Account</li>
             <li class="option">Notifications</li>
             <li class="option">Privacy</li>
             <li class="option">Help</li>
-            <li class="option log-out">Log out</li>
+            <li class="option">Log out</li>
         </ul>
 
     </div>
@@ -56,6 +54,7 @@
             <h1>user</h1>
         </section>
     </div>
+
     <div id="playlists">
         <div class="playlist">
             <section class="playlist-cover">
@@ -126,10 +125,9 @@
             </section>
         </div>
     </div>
-    
 </div>
 
-    <script src="script.js"></script>
+<script src="script.js"></script>
 
 </body>
 </html>

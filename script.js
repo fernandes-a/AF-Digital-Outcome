@@ -39,11 +39,13 @@ function closeSearch() {
 };
 
 function showSettings() {
-    alert('dfdgjdh');
     let settings = document.querySelector('.settings-options')
-    options = document.querySelectorAll('.options');
+    options = document.querySelectorAll('.option')
+    nav = document.querySelector(".hamburger");
 
     settings.classList.toggle("open");
+
+    nav.classList.toggle("hidden");
     
     options.forEach(link => {
         link.classList.toggle("fade");

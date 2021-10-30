@@ -31,7 +31,7 @@ nav {
 }
 
 .hamburger {
-    position: fixed;
+    position: absolute;
     cursor: pointer;
     left: 3%;
     top: calc((10vh - 29px)/2);
@@ -301,18 +301,21 @@ h2 {
     top: 0;
     height: 10vh;
     width: 100%;
-    z-index: 4;
 }
 
-.cog {
+#cog {
     position: absolute;
-    height: 10vh;
     right: 0;
+    background: none;
+    height: 10vh;
+    width: 10vh;
+    border: none;
+    z-index: 5;
 }
 
-.cog img {
+#cog img {
     height: 30px;
-    padding: calc((10vh - 30px)/2);
+    margin: calc((10vh - 30px)/2);
 }
 
 .settings-options {
@@ -334,12 +337,13 @@ h2 {
     clip-path: circle(200% at 105% -10%);
     -webkit-clip-path: circle(200% at 105% -10%);
     pointer-events: all;
+    z-index: 4;
 }
 
 .option {
     width: 100%;
     box-sizing: border-box;
-    padding: 10px;
+    padding: 20px;
     border-bottom: 1px solid #8C8C8C;
     opacity: 0;
 }
