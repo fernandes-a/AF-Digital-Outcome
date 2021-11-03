@@ -1,9 +1,12 @@
 function showMenu() {
-    let nav = document.querySelector('.nav-links')
-    navItem = document.querySelectorAll('.nav-item');
+    let navArea = document.querySelector('.nav-links')
+    navItem = document.querySelectorAll('.nav-item')
+    nav = document.querySelector('nav');
+
+    navArea.classList.toggle("open");
 
     nav.classList.toggle("open");
-    
+
     navItem.forEach(link => {
         link.classList.toggle("fade");
     });
@@ -39,13 +42,13 @@ function closeSearch() {
 };
 
 function showSettings() {
-    let settings = document.querySelector('.settings-options')
+    let settingsArea = document.querySelector('.settings-options')
     options = document.querySelectorAll('.option')
-    nav = document.querySelector(".hamburger");
+    settings = document.querySelector("#settings");
+
+    settingsArea.classList.toggle("open");
 
     settings.classList.toggle("open");
-
-    nav.classList.toggle("hidden");
     
     options.forEach(link => {
         link.classList.toggle("fade");

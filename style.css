@@ -27,7 +27,10 @@ body {
 nav {
     position: relative;
     height: 10vh;
-    z-index: 5;
+}
+
+nav.open {
+    z-index: 6;
 }
 
 .hamburger {
@@ -35,7 +38,7 @@ nav {
     cursor: pointer;
     left: 3%;
     top: calc((10vh - 29px)/2);
-    z-index: 2;
+    z-index: 5;
 }
 
 .nav-links {
@@ -303,6 +306,10 @@ h2 {
     width: 100%;
 }
 
+#settings.open {
+    z-index: 6;
+}
+
 #cog {
     position: absolute;
     right: 0;
@@ -337,7 +344,6 @@ h2 {
     clip-path: circle(200% at 105% -10%);
     -webkit-clip-path: circle(200% at 105% -10%);
     pointer-events: all;
-    z-index: 4;
 }
 
 .option {
