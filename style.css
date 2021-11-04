@@ -162,6 +162,10 @@ h2 {
     height: 70px;
 }
 
+#play img.hide {
+    display: none;
+}
+
 #like {
     right: 0px;
     top: 10px;

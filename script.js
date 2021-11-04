@@ -12,6 +12,16 @@ function showMenu() {
     });
 };
 
+function playpauseSnippet() {
+    let play = document.querySelector("#play-icon")
+    pause = document.querySelector("#pause-icon");
+
+    play.classList.toggle("hide");
+    pause.classList.toggle("hide")
+
+
+};
+
 function openSearch() {
     let searchBar = document.querySelector('#search-bar')
     textArea = document.querySelector('#search-text')
