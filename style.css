@@ -121,6 +121,10 @@ h2 {
     margin: 10px calc((100% - 250px)/2);
 }
 
+#img img {
+    width: 100%;
+}
+
 #interact {
     margin: 30px calc((100% - 270px)/2);
     height: 80px;
@@ -221,7 +225,7 @@ h2 {
     box-sizing: border-box;
     padding: 5px 5px 5px 34px;
     background-color: #fff;
-    background-image: url('images/search.png');
+    background-image: url('icons/search.png');
     background-repeat: no-repeat;
     background-position: 5px 5px;
     background-size: auto 24px;
