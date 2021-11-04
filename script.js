@@ -14,12 +14,17 @@ function showMenu() {
 
 function playpauseSnippet() {
     let play = document.querySelector("#play-icon")
-    pause = document.querySelector("#pause-icon");
+    pause = document.querySelector("#pause-icon")
+    audio = document.querySelector("#audio");
 
     play.classList.toggle("hide");
-    pause.classList.toggle("hide")
+    pause.classList.toggle("hide");
 
-
+    if (audio.paused) {
+        audio.play();
+    } else {
+        audio.pause();
+    };
 };
 
 function openSearch() {
