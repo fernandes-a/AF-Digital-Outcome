@@ -162,7 +162,7 @@ h2 {
     height: 70px;
 }
 
-#play img.hide {
+.hide {
     display: none;
 }
 

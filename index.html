@@ -48,8 +48,16 @@
 
     <div id="interact">
         <button id="save" class="interaction"><img src="icons/plus.svg" alt="save"></button>
-        <button id="play" class="interaction" onclick="playpauseSnippet()"><img id="play-icon" class="" src="icons/play.svg" alt="play"><img id="pause-icon" class="hide" src="icons/pause.svg" alt="pause"></button>
-        <button id="like" class="interaction"><img src="icons/heart.svg" alt="play"></button>
+
+        <button id="play" class="interaction" onclick="playpauseSnippet()">
+            <img id="play-icon" class="" src="icons/play.svg" alt="play">
+            <img id="pause-icon" class="hide" src="icons/pause.svg" alt="pause">
+        </button>
+
+        <button id="like" class="interaction" onclick="likeSnippet()">
+            <img id="empty-heart" class="" src="icons/heart.svg" alt="play">
+            <img id="red-heart" class="hide" src="icons/heart_red.svg" alt="play">
+        </button>
     </div> <!-- /interact -->
 
     <div id="links">

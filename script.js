@@ -34,6 +34,14 @@ function playpauseSnippet() {
     };
 };
 
+function likeSnippet() {
+    let outline = document.querySelector("#empty-heart")
+    fill = document.querySelector("#red-heart");
+
+    outline.classList.toggle("hide");
+    fill.classList.toggle("hide");
+};
+
 function openSearch() {
     let searchBar = document.querySelector('#search-bar')
     textArea = document.querySelector('#search-text')
