@@ -17,13 +17,20 @@ function playpauseSnippet() {
     pause = document.querySelector("#pause-icon")
     audio = document.querySelector("#audio");
 
-    play.classList.toggle("hide");
-    pause.classList.toggle("hide");
-
     if (audio.paused) {
         audio.play();
+        play.classList.add("hide");
+        pause.classList.remove("hide");
+
     } else {
         audio.pause();
+        play.classList.remove("hide");
+        pause.classList.add("hide");
+    };
+
+    audio.onended = function() {
+        play.classList.remove("hide");
+        pause.classList.add("hide");    
     };
 };
 
