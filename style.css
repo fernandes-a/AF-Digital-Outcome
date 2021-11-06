@@ -388,12 +388,11 @@ h2 {
 }
 
 #likes {
-    margin: 10px 10vh;
+    margin: 20px 10vh;
 }
 
 .liked-snippet {
     height: 110px;
-    /*border-bottom: 1px solid #8C8C8C;*/
     line-height: 80px;
 }
 
